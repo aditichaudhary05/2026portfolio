@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+h1{
+    text-align: center;
+}
+.mockup{
+    height: 50vw;
+    width: 80vw;
+    border-radius: 10px;
+}
+.content{
+    margin-top: 50px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.box{
+    height: 150px;
+    /* background-color: brown; */
+    padding: 10px;
+}
+.one{
+    grid-column: span 2;
+    font-size: 25px;
+    color: rgb(232, 0, 229);
+}
+.two{
+    grid-column: span 5;
+    font-size: 15px;
+}
+.workflow{
+    height: 40vw;
+    width: 90vw;
+    display: flex;
+}
+.workflow>img{
+    width: 50%;
+}
+.heading{
+    margin-top: 20px;
+}
+.parentlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.challange{
+    font-size: 20px;
+    list-style-type: none;
+}
+.contentoflist{
+    font-size: 15px;
+}
+span{
+    color: rgb(0, 247, 255);
+}
+.margin-bottom{
+    margin-bottom: 200px;
+}
+b{
+    color: rgb(0, 247, 255);
+}
+@media (max-width: 980px) {
+  .one{
+    grid-column: span 7;
+  }
+  .two{
+    grid-column: span 7;
+    margin-bottom: 70px;
+    font-size: 10px;
+    line-height: 15px;
+
+  }
+  .box{
+    height: auto;
+  }
+  .workflow{
+    flex-direction: column;
+    height: auto;
+  }
+  .workflow>img{
+    width: 100%;
+  }
+  .childlist,.contentoflist{
+    font-size: 10px;
+  }
+}

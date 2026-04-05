@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Inter light";
+    src: url("fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Inter medium";
+    src: url("fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Inter bold";
+    src: url("fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+    font-weight: 400;
+}
+.darkMode{
+    background-color: black;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 100;
+    font-family: 'Inter light', sans-serif;
+}
+h1{
+    font-size: 6vw;
+    padding-left: 10px;
+    border-bottom: 1px solid grey;
+}
+p{
+    color: grey;
+    margin:50px 40px;
+}
+.grid{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+h2{
+    color: white;
+    margin-bottom: 25px;
+    text-underline-offset: 7px;
+}
+span img{
+    height: 16px;
+    opacity: 0.5;
+    padding-top: 3px;
+    margin-right: 10px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: grey;
+}
+.languages{
+    color: grey;
+}
+h4{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.skills{
+    color: grey;
+    grid-row: span 2;
+}
+.interests{
+    color: grey;
+}
+.education{
+    color: grey;
+}
+@media(max-width:750px){
+    h1{
+        font-size: 12vw;
+    }
+}
+
+@media(max-width:550px){
+    h1{
+        font-size: 18vw;
+    }
+}
+@media(max-width:650px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media(max-width:450px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        gap: 50px;
+    }
+}
